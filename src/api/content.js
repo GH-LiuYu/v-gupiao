@@ -129,7 +129,13 @@ export const searchList10 = query => {
     params: query
   })
 }
-
+export const addLots = query => {
+  return request({
+    url: '/api/addLots',
+    method: 'get',
+    params: query
+  })
+}
 export const list = query => {
   return request({
     url:'/api/getList',

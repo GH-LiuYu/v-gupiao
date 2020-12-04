@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import Search from '@/components/Search'
-import Content from '@/components/Content'
+import AddLots from '@/components/AddLots'
+import cont from '@/components/cont'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -21,6 +22,16 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: Search
-    }
+    },
+    {
+      path: '/cont',
+      name: 'cont',
+      component: cont
+    },
+    {
+      path: '/addLots',
+      name: 'addLots',
+      component: AddLots
+    },
   ]
 })

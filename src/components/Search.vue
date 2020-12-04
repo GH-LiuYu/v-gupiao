@@ -29,8 +29,11 @@
         width="200"
           label="操作">
           <template slot-scope="scope">
+            <el-tooltip placement="top">
+              <div slot="content"><img :src="scope.row.url90" class="image"></div>
+              <el-button type="danger" size="mini" style="padding: 4px;">明细</el-button>
+            </el-tooltip>
             <a :href="'http://'+scope.row.href" target="_blank">查看</a>
-            <a :href="'http://'+scope.row.detail" target="_blank">明细</a>
             <el-button type="primary" size="mini" @click="addOpt(index,scope.row)">添加自选</el-button>
           </template>
         </el-table-column>
